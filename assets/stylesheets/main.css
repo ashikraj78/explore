@@ -60,11 +60,20 @@ body{
 }
 .logo{
     float: left;
-    font-size: 24px;
+    font-size: 0;
+}
+.logo img{
+    border-radius: 50%;
+    width: 30%;
 }
 .ascii{
     float:right;
     font-size: 48px;
+    z-index: 1;
+}
+.ascii a{
+    text-decoration: none;
+    color: black;
 }
 /* clear fix */
 .cf::before,
@@ -82,6 +91,7 @@ body{
     left: 0;
     right: 0;
     padding: 20px 30px;
+    z-index: 1;
 }
 
 .videotab{
@@ -112,7 +122,7 @@ body{
     margin: 0 auto;
     text-align: center;
     left: 50%;
-    top: 25%;
+    top: 15%;
     transform: translate(-50%,-50%);
 }
 .content .bline{
@@ -131,15 +141,17 @@ body{
 .content h1{
     font-size: 48px;
     font-family: monospace;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-weight: 900;
 }
 .content p{
     font-weight: 600;
+    font-size: 20px;
+    color: rgb(35, 35, 35);
 }
 /* hero */
 .hero{
-    background: #F4F1EC;
+    background: rgb(200, 200, 200);
     padding:30px 280px 0 280px;
     text-align: center;
 }
@@ -160,10 +172,15 @@ body{
 }
 .box{
     padding: 10px 15px;
-    background: #D2D2D0;
+    background: rgb(200, 200, 200);
     display: inline-block;
     margin: 50px;
-    box-shadow: 5px 5px 5px 0px grey;
+    border-radius: 12px;
+    box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.4), -7px -7px 25px rgba(255, 255, 255, 1), inset -5px -5px 5px rgba(200, 200, 200, 1) ;
+}
+.box a{
+    text-decoration: none;
+    color: black;
 }
 .label2{
     font-size: 24px;
@@ -173,6 +190,7 @@ body{
 /* section 2 */
 .section2{
    position: relative;
+   font-size: 0;
 }
 .section2 img{
     width: 100%;
@@ -201,8 +219,8 @@ p{
 /* section 3 */
 .section3{
     padding: 50px;
+    background: rgba(200, 200, 200, 1);
 }
-
 .sec3cont{
     float: left;
     width: 50%;
@@ -213,16 +231,21 @@ p{
     font-weight: 900;
 }
 .sec3img{
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
     float: right;
     width: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4), -20px -20px 50px rgba(255, 255, 255,1), inset -5px -5px 5px rgba(200, 200, 200, 1);
 }
 .sec3img img{
+    border-radius: 10px;
     width: 100%;
-    box-shadow: 5px 5px 5px 0px grey;
 }
 /* section4 */
 .section4{
     position: relative;
+    font-size: 0;
  }
  .section4 img{
      width: 100%;
@@ -236,25 +259,36 @@ p{
  }
  /* section5 */
  .section5{
+     
      padding: 20px 0 50px 0;
+     background: rgba(200, 200, 200, 1);
  }
 
  .sec5cont{
     text-align: center;
     padding:30px 280px;
  }
- .sec5img img{
-     width: 100%;
+ .sec5box{
+     padding: 5px;
+     border-radius: 10px;
+     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.4), -7px -7px 15px rgba(255, 255, 255, 1), inset -5px -5px 5px rgba(200, 200, 200, 1);
  }
+ .sec5img img{
+     border-radius: 10px;
+     width: 100%;
+     
+}
  .sec5img{
      float: left;
      width: 25%;
      box-sizing: border-box;
      padding: 50px 10px;
+     
  }
  /* section6 */
  .section6{
      text-align: center;
+     background: rgba(200, 200, 200, 1);
  }
  .summitpoint{
      color:#AB5861;
@@ -265,9 +299,11 @@ p{
      height: 150px;
      width: 150px;
      transform: rotate(45deg);
-     border: 2px solid #AB5861;
+     /* border: 2px solid #AB5861; */
      margin: 100px 100px 30px 100px;
      position: relative;
+     border-radius: 20px;
+     box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.4), -7px -7px 25px rgba(255, 255, 255, 1), inset -5px -5px 5px rgba(200, 200, 200, 1) ;
  }
  .point h2{
      position:absolute;
@@ -300,7 +336,7 @@ p{
 .footer{
     padding: 30px 30px;
     border-top: 1px solid rgb(161, 161, 161);
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .fa-facebook,.fa-twitter,.fa-linkedin,.fa-pinterest,.fa-vimeo {
     color:#5385c1;
